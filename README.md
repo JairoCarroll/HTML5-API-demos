@@ -1,38 +1,69 @@
-# HTML5 API demos #
-[HTML5 API demos](https://github.com/AurelioDeRosa/HTML5-API-demos) is a repository where you can find information about many JavaScript and HTML5 APIs.
+<h1 align="center"><img src="docs/images/readme_logo.png" width="500" alt="MsQuic logo"/></h1>
 
-For every API listed in this repository you'll find a link to the specifications, an article I've written on the subject, a link to [CanIUse](http://caniuse.com/) to discover what browsers support it, and to a demo I've developed as a complement for the articles. The demos are particularly valuable because they allow you to play with the these JavaScript and HTML5 APIs.
+[![Documentation](https://img.shields.io/static/v1?label=Documentation&message=Dashboard&color=blue)](https://microsoft.github.io/msquic/msquicdocs/docs/API.html)
+[![Perf Dashboard](https://img.shields.io/static/v1?label=Performance&message=Dashboard&color=blue)](https://microsoft.github.io/msquic/)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/microsoft/msquic/build.yml?query=branch%3Amain&label=Build)](https://github.com/microsoft/msquic/actions/workflows/build.yml?query=branch%3Amain)
+[![Test Status](https://img.shields.io/github/actions/workflow/status/microsoft/msquic/test.yml?query=branch%3Amain&label=Test)](https://github.com/microsoft/msquic/actions/workflows/test.yml?query=branch%3Amain)
+[![Stress Status](https://img.shields.io/github/actions/workflow/status/microsoft/msquic/stress.yml?query=branch%3Amain&label=Stress)](https://github.com/microsoft/msquic/actions/workflows/stress.yml?query=branch%3Amain)
+[![codecov](https://codecov.io/github/microsoft/msquic/branch/main/graph/badge.svg?token=xAjIMDn7wy)](https://codecov.io/github/microsoft/msquic)
+![CodeQL](https://github.com/microsoft/msquic/workflows/CodeQL/badge.svg?branch=main)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/4846/badge)](https://bestpractices.coreinfrastructure.org/projects/4846)
+[![Discord](https://img.shields.io/discord/827744285595271168?label=Discord&logo=discord&logoColor=white&color=7289DA)](https://discord.gg/YGAtCwTSsc)
+[![crates.io](https://img.shields.io/crates/v/msquic)](https://crates.io/crates/msquic)
+[![nuget](https://img.shields.io/nuget/vpre/Microsoft.Native.Quic.MsQuic.Schannel?style=plastic)](https://www.nuget.org/profiles/msquic)
 
-In this repository you can learn about the following APIs, listed in alphabetic order:
+MsQuic is a Microsoft implementation of the [IETF QUIC](https://datatracker.ietf.org/wg/quic/about/)
+protocol. It is cross-platform, written in C and designed to be a general purpose QUIC library. MsQuic also has C++ API wrapper classes and exposes interop layers for both Rust and C#.
 
-| API   | Specifications | Article | Support | Live demo |
-| ----- | :------------: | :-----: | :-----: | :-------: |
-| Ambient Light API| [Specifications](http://www.w3.org/TR/ambient-light/) | [Article](http://modernweb.com/2014/05/27/introduction-to-the-ambient-light-api/) | [Support](http://caniuse.com/#feat=ambient-light) | [Live demo](http://aurelio.audero.it/demo/ambient-light-api-demo.html)
-| Battery Status API| [Specifications](http://www.w3.org/TR/battery-status/) | [Article](http://code.tutsplus.com/tutorials/html5-battery-status-api--mobile-22795) | [Support](http://caniuse.com/#feat=battery-status) | [Live demo](http://aurelio.audero.it/demo/battery-status-api-demo.html)
-| classList API| [Specifications](http://dom.spec.whatwg.org/#dom-element-classlist) | [Article](http://www.sitepoint.com/exploring-classlist-api/) | [Support](http://caniuse.com/#feat=classlist) | [Live demo](http://aurelio.audero.it/demo/classlist-api-demo.html)
-| Dataset API| [Specifications](http://www.w3.org/TR/html5/dom.html#dom-dataset) | [Article](http://www.sitepoint.com/managing-custom-data-html5-dataset-api/) | [Support](http://caniuse.com/#feat=dataset) | [Live demo](http://aurelio.audero.it/demo/dataset-api-demo.html)
-| Device Orientation API| [Specifications](http://www.w3.org/TR/orientation-event/) | [Article](http://code.tutsplus.com/tutorials/an-introduction-to-the-device-orientation-api--cms-21067) | [Support](http://caniuse.com/#feat=deviceorientation) | [Live demo](http://aurelio.audero.it/demo/device-orientation-api-demo.html)
-| Geolocation API| [Specifications](http://www.w3.org/TR/geolocation-API/) | [Article](http://code.tutsplus.com/tutorials/an-introduction-to-the-geolocation-api--cms-20071) | [Support](http://caniuse.com/#feat=geolocation) | [Live demo](http://aurelio.audero.it/demo/geolocation-api-demo.html)
-| getUserMedia API| [Specifications](http://www.w3.org/TR/mediacapture-streams/) | [Article](http://www.sitepoint.com/introduction-getusermedia-api/) | [Support](http://caniuse.com/#feat=stream) | [Live demo](http://aurelio.audero.it/demo/getusermedia-api-demo.html)
-| High Resolution Time API| [Specifications](http://www.w3.org/TR/hr-time/) | [Article](http://www.sitepoint.com/discovering-the-high-resolution-time-api/) | [Support](http://caniuse.com/#feat=high-resolution-time) | [Live demo](http://aurelio.audero.it/demo/high-resolution-time-api-demo.html)
-| Navigation Timing API| [Specifications](http://www.w3.org/TR/navigation-timing/) | [Article](http://developer.telerik.com/featured/introduction-navigation-timing-api/)  | [Support](http://caniuse.com/#feat=nav-timing) | [Live demo](http://aurelio.audero.it/demo/navigation-timing-api-demo.html)
-| Network Information API| [Specifications](http://w3c.github.io/netinfo/) | [Article](http://code.tutsplus.com/tutorials/html5-network-information-api--cms-21598) | | [Live demo](http://aurelio.audero.it/demo/network-information-api-demo.html)
-| Page Visibility API| [Specifications](http://www.w3.org/TR/page-visibility/) | [Article](http://www.sitepoint.com/introduction-to-page-visibility-api/) | [Support](http://caniuse.com/#feat=pagevisibility) | [Live demo](http://aurelio.audero.it/demo/page-visibility-api-demo.html)
-| Proximity API| [Specifications](http://www.w3.org/TR/proximity/) | [Article](http://www.sitepoint.com/introducing-proximity-api/) | [Support](http://caniuse.com/#feat=proximity) | [Live demo](http://aurelio.audero.it/demo/proximity-api-demo.html)
-| Resource Timing API| [Specifications](http://www.w3.org/TR/resource-timing/) | [Article](http://www.sitepoint.com/introduction-resource-timing-api/) | [Support](http://caniuse.com/#feat=resource-timing) | [Live demo](http://aurelio.audero.it/demo/resource-timing-api-demo.html)
-| Speech Synthesis API| [Specifications](https://dvcs.w3.org/hg/speech-api/raw-file/tip/speechapi.html#tts-section) | [Article](http://www.sitepoint.com/talking-web-pages-and-the-speech-synthesis-api/) | [Support](http://caniuse.com/#feat=speech-synthesis) | [Live demo](http://aurelio.audero.it/demo/speech-synthesis-api-demo.html)
-| Screen Orientation API| [Specifications](http://www.w3.org/TR/screen-orientation/) | [Article](http://www.sitepoint.com/introducing-screen-orientation-api/) | [Support](http://caniuse.com/#feat=screen-orientation) | [Live demo](http://aurelio.audero.it/demo/screen-orientation-api-demo.html)
-| User Timing API| [Specifications](http://www.w3.org/TR/user-timing/) | [Article](http://www.sitepoint.com/discovering-user-timing-api/) | [Support](http://caniuse.com/#feat=user-timing) | [Live demo](http://aurelio.audero.it/demo/user-timing-api-demo.html)
-| Vibration API| [Specifications](http://www.w3.org/TR/vibration/) | [Article](http://code.tutsplus.com/tutorials/html5-vibration-api--mobile-22585) | [Support](http://caniuse.com/#feat=vibration) | [Live demo](http://aurelio.audero.it/demo/vibration-api-demo.html)
-| Web Notification API| [Specifications](http://www.w3.org/TR/notifications/) | [Article](http://www.sitepoint.com/introduction-web-notifications-api/) | [Support](http://caniuse.com/#feat=notifications) | [Live demo](http://aurelio.audero.it/demo/web-notifications-api-demo.html)
-| Web Speech API| [Specifications](https://dvcs.w3.org/hg/speech-api/raw-file/tip/webspeechapi.html) | [Article](http://www.sitepoint.com/introducing-web-speech-api/) | [Support](http://caniuse.com/#feat=speech-recognition) | [Live demo](http://aurelio.audero.it/demo/web-speech-api-demo.html)
+## Protocol Features
 
-## Note ##
-While the repository is called "HTML5 API demos", many of these APIs aren't part of the HTML5 specifications. So, technically speaking, many of them aren't HTML5 APIs. However, at the time I started this repository, I found the name to be useful as an umbrella to group them all and to... well, attract users (you know, SEO and the like).
+[![](https://img.shields.io/static/v1?label=RFC&message=9000&color=brightgreen)](https://tools.ietf.org/html/rfc9000)
+[![](https://img.shields.io/static/v1?label=RFC&message=9001&color=brightgreen)](https://tools.ietf.org/html/rfc9001)
+[![](https://img.shields.io/static/v1?label=RFC&message=9002&color=brightgreen)](https://tools.ietf.org/html/rfc9002)
+[![](https://img.shields.io/static/v1?label=RFC&message=9221&color=brightgreen)](https://tools.ietf.org/html/rfc9221)
+[![](https://img.shields.io/static/v1?label=RFC&message=9287&color=brightgreen)](https://tools.ietf.org/html/rfc9287)
+[![](https://img.shields.io/static/v1?label=RFC&message=9368&color=brightgreen)](https://tools.ietf.org/html/rfc9368)
+[![](https://img.shields.io/static/v1?label=RFC&message=9369&color=brightgreen)](https://tools.ietf.org/html/rfc9369)
+[![](https://img.shields.io/static/v1?label=Draft&message=Load%20Balancers&color=blue)](https://tools.ietf.org/html/draft-ietf-quic-load-balancers)
+[![](https://img.shields.io/static/v1?label=Draft&message=ACK%20Frequency&color=blue)](https://tools.ietf.org/html/draft-ietf-quic-ack-frequency)
+[![](https://img.shields.io/static/v1?label=Draft&message=Disable%20Encryption&color=blueviolet)](https://tools.ietf.org/html/draft-banks-quic-disable-encryption)
+[![](https://img.shields.io/static/v1?label=Draft&message=Performance&color=blueviolet)](https://tools.ietf.org/html/draft-banks-quic-performance)
+[![](https://img.shields.io/static/v1?label=Draft&message=CIBIR&color=blueviolet)](https://tools.ietf.org/html/draft-banks-quic-cibir)
+[![](https://img.shields.io/static/v1?label=Draft&message=Timestamps&color=blueviolet)](https://tools.ietf.org/html/draft-huitema-quic-ts)
+[![](https://img.shields.io/static/v1?label=Draft&message=ReliableReset&color=blueviolet)](https://datatracker.ietf.org/doc/draft-ietf-quic-reliable-stream-reset/)
 
-## License ##
-[HTML5 API demos](https://github.com/AurelioDeRosa/HTML5-API-demos) is licensed under the
-[CC BY-NC 4.0](http://creativecommons.org/licenses/by-nc/4.0/) ("Creative Commons Attribution NonCommercial 4.0")
+QUIC has many benefits when compared to existing "TLS over TCP" scenarios:
 
-## Author ##
-[Aurelio De Rosa](http://www.audero.it) (Twitter: [@AurelioDeRosa](https://twitter.com/AurelioDeRosa))
+  * All packets are encrypted and handshake is authenticated with TLS 1.3.
+  * Parallel streams of (reliable and unreliable) application data.
+  * Exchange application data in the first round trip (0-RTT).
+  * Improved congestion control and loss recovery.
+  * Survives a change in the clients IP address or port.
+  * Stateless load balancing.
+  * Easily extendable for new features and extensions.
+
+## Library Features
+
+MsQuic has several features that differentiates it from other QUIC implementations:
+
+  * Optimized for client and server.
+  * Optimized for maximal throughput and minimal latency.
+  * Asynchronous IO.
+  * Receive side scaling ([RSS](https://docs.microsoft.com/en-us/windows-hardware/drivers/network/introduction-to-receive-side-scaling)) support.
+  * UDP send and receive coalescing support.
+
+# Documentation
+
+  * For platform support details, see the [Platforms docs](./docs/Platforms.md).
+  * For release details, see the [Release docs](./docs/Release.md).
+  * For performance data, see the [Performance dashboard](https://aka.ms/msquicperformance).
+  * For building the library, see the [Build docs](./docs/BUILD.md).
+  * For testing the library, see the [Testing docs](./docs/TEST.md).
+  * For using the API, see the [API docs](./docs/API.md) or the [Sample](./src/tools/sample/sample.c).
+  * For deploying QUIC, see the [Deployment docs](./docs/Deployment.md).
+  * For diagnosing issues, see the [Diagnostics docs](./docs/Diagnostics.md) and the [Trouble Shooting Guide](./docs/TSG.md).
+  * For other frequently asked questions, see the [FAQs](./docs/FAQ.md).
+
+# Contributing
+
+For information on contributing, please see our [contribution guidelines](./.github/CONTRIBUTING.md). Feel free to take a look at our [Good First Issues](https://github.com/microsoft/msquic/labels/good%20first%20issue) list if you're looking for somewhere to start. If you'd just like to talk, come chat with us [on Discord](https://discord.gg/YGAtCwTSsc).
